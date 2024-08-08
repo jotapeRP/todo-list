@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply font-sans bg-[#f2f2f2] p-8 text-[#333] bg-[url('./img/city.jpg')] bg-center bg-cover;
+  }
+
+  .app {
+    @apply max-w-[600px] m-auto mb-72 bg-[#f2f2f2] px-5 py-32 rounded-xl;
+  }
+
+  h1 {
+    @apply text-center font-extrabold text-3xl;
+  }
+
+  h2 {
+    @apply mb-3 font-bold text-xl;
+  }
+
+  p {
+    @apply mx-3;
+  }
+
+  input {
+    @apply box-border;
+  }
+
+  button {
+    @apply bg-[#333974] text-[#f2f2f2] px-[5px] py-[10px] mr-3 rounded cursor-pointer opacity-80 transition-[.3s];
+  }
+
+  button:hover {
+    @apply opacity-100;
+  }
+
+  .todo-list {
+    @apply mb-5 pb-5 border-b border-solid border-[#555];
+  }
+
+  .todo {
+    @apply bg-[#fff] shadow-[0px_0px_10px_rgba(0,0,0,0.1)] p-3 mb-3 rounded flex justify-between items-center;
+  }
+
+  .complete {
+    @apply bg-[#5cb85c];
+  }
+
+  .remove {
+    @apply bg-[#d9534f];
+  }
+
+  .todo-form {
+    @apply pb-6;
+  }
+
+  input,
+  select {
+    @apply p-1 mb-3 border border-solid border-[#ddd] rounded w-full;
+  }
+
+  .filter,
+  .search {
+    @apply border-b border-solid border-[#555] mb-5 pb-5;
+  }
+
+  .filter-options {
+    @apply flex justify-between gap-12;
+  }
+
+  .filter-options div {
+    @apply flex-1;
+  }
+}
